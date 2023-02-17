@@ -1,26 +1,27 @@
 <addons default-repository="github-ssh">
 
     <!-- Moqui runtime -->
-    <runtime name="moqui-runtime" group="daoflows" version="" branch="master"/>
+    <runtime name="moqui-runtime" group="acctsdigital" version="" branch="master"/>
 
     <!-- Moqui components -->
-    <component name="moqui-aws" group="daoflows" version="" branch="master"/>
-    <component name="moqui-fop" group="daoflows" version="" branch="master"/>
-    <component name="moqui-poi" group="daoflows" version="" branch="master"/>
-    <component name="moqui-sftp" group="daoflows" version="" branch="master"/>
-    <component name="mantle-udm" group="daoflows" version="" branch="master"/>
-    <component name="mantle-usl" group="daoflows" version="" branch="master"/>
-    <component name="SimpleScreens" group="daoflows" version="" branch="master"/>
-    <component name="MarbleERP" group="daoflows" version="" branch="master"/>
+    <component name="moqui-aws" group="acctsdigital" version="" branch="master"/>
+    <component name="moqui-fop" group="acctsdigital" version="" branch="master"/>
+    <component name="moqui-poi" group="acctsdigital" version="" branch="master"/>
+    <component name="moqui-sftp" group="acctsdigital" version="" branch="master"/>
+    <component name="mantle-udm" group="acctsdigital" version="" branch="master"/>
+    <component name="mantle-usl" group="acctsdigital" version="" branch="master"/>
+    <component name="SimpleScreens" group="acctsdigital" version="" branch="master"/>
+    <component name="MarbleERP" group="acctsdigital" version="" branch="master"/>
 
     <!-- DAOLOS components -->
-    <component name="daolos-services" group="daoflows" version="" branch="master"/>
-    <component name="daolos-store" group="daoflows" version="" branch="master"/>
-    <component name="daolos-backoffice" group="daoflows" version="" branch="master"/>
+    <component name="daolos-foundation-lib" group="acctsdigital" version="" branch="master"/>
+    <component name="daolos-business-lib" group="acctsdigital" version="" branch="master"/>
+    <component name="daolos-spark-api" group="acctsdigital" version="" branch="master"/>
+    <component name="daolos-launch-api" group="acctsdigital" version="" branch="master"/>
+    <component name="daolos-store-api" group="acctsdigital" version="" branch="master"/>
 
     <!-- Component sets -->
-    <component-set name="daolos-moqui" components="moqui-aws,moqui-fop,moqui-poi,moqui-sftp,mantle-udm,mantle-usl,SimpleScreens,MarbleERP"/>
-    <component-set name="daolos-base" components="daolos-services,daolos-store,daolos-backoffice"/>
-    <component-set name="daolos-dev" sets="daolos-moqui,daolos-base"/>
+    <component-set name="daolos-framework" components="moqui-aws,moqui-fop,moqui-poi,moqui-sftp,mantle-udm,mantle-usl,SimpleScreens,MarbleERP"/>
+    <component-set name="daolos-workspace" sets="daolos-framework" components="daolos-foundation-lib,daolos-business-lib,daolos-spark-api,daolos-launch-api,daolos-store-api"/>
 
 </addons>
