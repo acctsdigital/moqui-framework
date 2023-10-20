@@ -10,6 +10,7 @@
     <component name="moqui-sftp" group="acctsdigital" version="" branch="master"/>
     <component name="mantle-udm" group="acctsdigital" version="" branch="master"/>
     <component name="mantle-usl" group="acctsdigital" version="" branch="master"/>
+    <component name="moqui-sso" group="acctsdigital" version="" branch="master"/>
     <component name="SimpleScreens" group="acctsdigital" version="" branch="master"/>
     <component name="MarbleERP" group="acctsdigital" version="" branch="master"/>
 
@@ -21,7 +22,7 @@
     <component name="daolos-store-api" group="acctsdigital" version="" branch="master"/>
 
     <!-- Component sets -->
-    <component-set name="daolos-framework" components="moqui-aws,moqui-fop,moqui-poi,moqui-sftp,mantle-udm,mantle-usl,SimpleScreens,MarbleERP"/>
+    <component-set name="daolos-framework" components="moqui-aws,moqui-fop,moqui-poi,moqui-sftp,mantle-udm,mantle-usl,SimpleScreens,MarbleERP,moqui-sso"/>
     <component-set name="daolos-workspace" sets="daolos-framework" components="daolos-foundation-lib,daolos-business-lib,daolos-spark-api,daolos-launch-api,daolos-store-api"/>
 
 </addons>
