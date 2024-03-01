@@ -297,7 +297,7 @@ class ServiceFacadeImpl implements ServiceFacade {
         }
 
         // search for the service def XML file in the database
-        for (ResourceReference projectResourceRef in this.ecfi.resourceFacade.getLocationReference("dbresource://ServiceExt").getDirectoryEntries()) {
+        for (ResourceReference projectResourceRef in this.ecfi.resourceFacade.getLocationReference("dbresource://Workbench").getDirectoryEntries()) {
             serviceComponentRr = projectResourceRef.findChildDirectory(servicePathLocation)
             if (serviceComponentRr.supportsExists()) {
                 if (serviceComponentRr.exists) {
@@ -375,7 +375,7 @@ class ServiceFacadeImpl implements ServiceFacade {
         }
 
         // search for service def XML files in the database
-        for (ResourceReference projectResourceRef in this.ecfi.resourceFacade.getLocationReference("dbresource://ServiceExt").getDirectoryEntries()) {
+        for (ResourceReference projectResourceRef in this.ecfi.resourceFacade.getLocationReference("dbresource://Workbench").getDirectoryEntries()) {
             ResourceReference serviceRr = projectResourceRef.findChildDirectory("service")
             if (serviceRr.supportsExists() && serviceRr.exists && serviceRr.supportsDirectory()) {
                 findServicesInDir(serviceRr.location, serviceRr, sns)
