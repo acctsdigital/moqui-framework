@@ -1,4 +1,4 @@
-<addons default-repository="github-ssh">
+<addons default-repository="github">
 
     <!-- Moqui runtime -->
     <runtime name="moqui-runtime" group="acctsdigital" version="" branch="master"/>
@@ -24,7 +24,7 @@
     <!-- Component sets -->
     <component-set name="daolos-framework" components="moqui-aws,moqui-fop,moqui-poi,moqui-sftp,mantle-udm,mantle-usl,SimpleScreens,MarbleERP,moqui-sso"/>
     <component-set name="daolos-developer" sets="daolos-framework" components="daolos-foundation-lib,daolos-business-lib,daolos-spark-api,daolos-launch-api,daolos-store-api"/>
-    <component-set name="daolos-spark-api" sets="daolos-framework" components="daolos-foundation-lib,daolos-spark-api"/>
-    <component-set name="daolos-launch-api" sets="daolos-framework" components="daolos-foundation-lib,daolos-business-lib,daolos-launch-api,daolos-store-api"/>
+    <component-set name="daolos-spark" sets="daolos-framework" components="daolos-foundation-lib,daolos-spark-api"/>
+    <component-set name="daolos-launch" sets="daolos-framework" components="daolos-foundation-lib,daolos-business-lib,daolos-launch-api,daolos-store-api"/>
 
 </addons>
